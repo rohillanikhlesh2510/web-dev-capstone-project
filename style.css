@@ -1,0 +1,508 @@
+header {
+    width: 100%;                     /* full width rectangle */
+    background-color: #db5959;       /* any color you like */
+    padding: 10px 20px;              /* spacing inside header */
+    box-sizing: border-box;          /* include padding in width */
+}
+
+.head-container {
+    display: flex;                   /* horizontal layout */
+    justify-content: space-between;  /* logo left, nav right */
+    align-items: center;             /* vertical centering */
+    max-width: 1200px;               /* optional: center content on large screens */
+    margin: 0 auto;                  /* center container */
+}
+.hero-container p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.logo h1 {
+    margin: 0;                       /* remove default margin */
+    color: #fff;                      /* white logo text */
+    font-size: 1.8rem;
+}
+
+.nav a {
+    color: #fff;                      /* white links */
+    text-decoration: none;            /* remove underline */
+    margin-left: 20px;                /* space between links */
+    font-size: 1rem;
+    padding: 8px 12px;                /* optional padding for rectangle feel */
+    border-radius: 5px;               /* slightly rounded corners */
+    transition: background 0.3s;      /* hover effect smooth */
+}
+
+/* Hover effect on links */
+.nav a:hover {
+    background-color: rgba(255,255,255,0.2); /* light rectangle on hover */
+}
+
+.hero-container{
+    width: 100%;
+    background: linear-gradient(to left, #ffe8e8, #fff);
+    height: auto;
+}
+.hero p {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    width: 500px;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+ 
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    font-size: 20px;
+    background-color: red;
+    width: 150px;
+    color: white;
+    padding:10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    transition: 0.3 ease;
+}
+.btn:hover{
+    background-color: darkred;
+    color: white;
+}
+
+.img img {
+    width: 400px;         /* adjust this to match screenshot width */
+    height: auto;         /* keeps proportions */
+    border-radius: 10px;  /* rounded corners */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15); /* soft shadow */
+    float: right;
+    margin-top: -240px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(232, 91, 91, 0.15);
+
+}
+.search input,
+.search select{
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.categories{
+    text-align: center;
+    padding-left: 100px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 100px;
+    
+
+}
+.categories h2 {
+    width: 100%;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: -30px;
+    font-size: 2rem;
+} 
+.food img {
+    width: 120px;
+    border-radius: 50%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;   /* small rounded corners (optional) */
+    object-fit: cover;     /* keeps image neat */
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-left: 30px;
+}
+.restaurants {
+    padding: 20px;
+    
+}
+.heading h2{
+    width: 100%;
+    text-align: left;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Make cards align correctly */
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 90px;
+    
+}
+.restaurant-card {
+    width: 200px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    margin-left: 100px;
+    
+}
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+
+}
+.restaurant-card img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    
+}
+
+.restaurant-card h3 {
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.restaurant-card p {
+    margin: 0 15px;
+    color: gray;
+    font-size: 14px;
+}
+
+.rating {
+    display: block;
+    margin: 10px 15px;
+    color: #ffb800;
+    font-weight: bold;
+}
+.Offers {
+    display: flex;
+    justify-content: space-around; /* horizontal spacing */
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* wrap on smaller screens */
+    transition: 0.3 ease;
+    margin-right: 10px;
+}
+.Offers h2{
+    width: 100%;
+    text-align: left;
+    margin-left: 120px;
+    margin-bottom: -50px;
+    font-size: 2rem;
+}
+
+/* Each offer box */
+.offerimg {
+    display: flex;              /* horizontal layout inside box */
+    align-items: center;        /* vertically center image & text */
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #ff45451a;
+    gap: 10px;                  /* space between text and image */
+    background-color: #fff;     /* optional, for better look */
+    max-width: 250px;           /* optional width */
+    background: linear-gradient(to left, #ffe8e8, #fff);
+    margin-top: 80px;
+    margin-left: 0px;
+    
+}
+
+
+/* Image styling */
+.offerimg img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Text styling */
+.offerimg h3 {
+    margin: 0;                  /* remove default margin */
+    font-size: 1rem;
+}
+
+.Testimonials {
+    display: flex;                 /* horizontal layout for reviews */
+    justify-content: space-around;
+    flex-wrap: wrap;               /* wrap on small screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+.reviews {
+    background: linear-gradient(to left, #ffe8e8, #fff);
+    border: 1px solid #ccc;        /* box border */
+    border-radius: 10px;           /* rounded corners */
+    padding: 15px;                 /* inner spacing */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+    max-width: 300px;              /* control box size */
+    display: flex;
+    flex-direction: column;        /* stack image, text vertically */
+    align-items: center;           /* center content */
+    text-align: center;            /* center text */
+    gap: 10px;                     /* spacing between elements */
+    margin-top: 30px;
+}
+
+.reviews img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;            /* makes image circular */
+    object-fit: cover;             /* crop image nicely */
+    border: 2px solid #ccc;        /* optional border around image */
+}
+
+.reviews p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+.reviews h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.App{
+    padding-left: 50px;
+}
+.App h2{
+    font-size: 2rem;
+}
+.App p{
+    font-size: 1rem bold;
+    
+}
+.App img{
+    width: 60px;
+    height: 60px;
+} 
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: black;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* 📱 Tablets (768px and below) */
+@media (max-width: 768px) {
+
+    .head-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero .img img {
+        width: 80%;
+    }
+
+    .categories, .Resturant, .Offers, .Testimonials, .App {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .categories .food,
+    .restaurant-card,
+    .offerimg,
+    .reviews {
+        width: 45%;
+        margin: 10px auto;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input, select {
+        width: 80%;
+    }
+}
+
+
+/* 📱 Mobile (480px and below) */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .restaurant-list,
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categories .food,
+    .restaurant-card,
+    .offerimg,
+    .reviews {
+        width: 90%;
+    }
+
+    .hero .img img {
+        width: 90%;
+    }
+
+    .App img {
+        width: 120px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+@media (max-width: 600px){
+
+    /* HEADER */
+    .head-container{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav a{
+        margin: 8px;
+        display: inline-block;
+    }
+
+    /* HERO SECTION */
+    .hero p{
+        width: 90%;
+        font-size: 1.3rem;
+        margin: auto;
+    }
+    .img img{
+        width: 200px;
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+    .btn{
+        margin: 15px auto;
+        width: 120px;
+        font-size: 16px;
+    }
+
+    /* SEARCH BAR */
+    .search{
+        flex-direction: column;
+    }
+    .search input, .search select{
+        width: 90%;
+    }
+
+    /* CATEGORIES */
+    .Categories{
+        padding-left: 20px;
+        gap: 30px;
+        justify-content: center;
+    }
+    .Categories h2{
+        text-align: center;
+        margin-left: 0;
+    }
+    .food img{
+        margin-left: 0;
+    }
+
+    /* RESTAURANTS */
+    .heading h2{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .restaurant-list{
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    /* OFFERS */
+    .Offers h2{
+        text-align: center;
+        margin-left: 0;
+    }
+    .offerimg{
+        margin-top: 30px;
+    }
+
+    /* TESTIMONIALS */
+    .Testimonials h2{
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* APP SECTION */
+    .App{
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px){
+
+    .hero p{
+        width: 70%;
+        font-size: 1.7rem;
+    }
+    .img img{
+        width: 280px;
+        margin-top: -100px;
+    }
+
+    .search input, .search select{
+        width: 250px;
+    }
+
+    .Categories{
+        padding-left: 40px;
+        gap: 50px;
+    }
+
+    .heading h2, .Offers h2, .Testimonials h2{
+        margin-left: 40px;
+        font-size: 1.8rem;
+    }
+
+    .restaurant-list{
+        gap: 20px;
+        margin-left: 30px;
+    }
+
+    .offerimg{
+        max-width: 200px;
+}
+}
+}
